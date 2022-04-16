@@ -17,7 +17,11 @@ nav {
 
 a {
   color: #00b7ff;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: ease-out 0.1s; }
+  a:hover {
+    transition: ease-in 0.1s;
+    filter: brightness(80%); }
 
 button {
   padding: 10px;
