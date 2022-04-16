@@ -8,18 +8,21 @@
     <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
-    <form id="new-post-form" method="post" action="/new">
-      <div id="username-input">
-        <label for="user">Name</label>
-        <input id="user" type="text" name="user" required />
-      </div>
+    <main>
+      <h1>My Posts</h1>
+      <form id="new-post-form" method="post" action="/new">
+        <div id="name-input" class="inputs">
+          <label for="user">Name</label>
+          <input id="user" type="text" name="user" required />
+        </div>
 
-      <div id="post-text-input">
-        <label for="text">Your Post</label>
-        <textarea id="text" type="text" name="text" required> </textarea>
-      </div>
+        <div class="inputs">
+          <label for="text">Your Post</label>
+          <textarea id="text" type="text" name="text" required> </textarea>
+        </div>
 
-      <button type="submit">Post</button>
-    </form>
+        <button type="submit">Post</button>
+      </form>
+    </main>
   </body>
 </html>

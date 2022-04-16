@@ -8,24 +8,26 @@
     <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-
-    <a href="/new"><button>New Post</button></a>
-
     <main>
-      <h2>Posts</h2>
-      <div id="card-container">
-        <% posts.forEach(function(post) { %>
-        <div class="card">
-          <p><%= post.text %></p>
+      <h1><%= title %></h1>
+      <p>Welcome to <%= title %></p>
 
-          <div class="post-data">
-            <p><b><%= post.user %></b>,</p>
-            <p><%= post.added %></p>
+      <a href="/new"><button>New Post</button></a>
+
+      <div>
+        <h2>Posts</h2>
+        <div id="card-container">
+          <% posts.forEach(function(post) { %>
+          <div class="card">
+            <p><%= post.text %></p>
+
+            <div class="post-data">
+              <p><b><%= post.user %></b>,</p>
+              <p><%= post.added %></p>
+            </div>
           </div>
+          <% }) %>
         </div>
-        <% }) %>
       </div>
     </main>
   </body>
