@@ -2,12 +2,31 @@
   box-sizing: border-box; }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   min-height: 100vh;
-  padding: 50px;
+  padding: 25px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; }
 
 a {
   color: #00b7ff; }
+
+button {
+  padding: 10px;
+  background-color: #00b7ff;
+  border: 1px solid #00b7ff;
+  border-radius: 4px;
+  transition: ease-out 0.1s; }
+  button:hover {
+    transition: ease-in 0.1s;
+    filter: brightness(80%); }
 
 #card-container {
   display: flex;
@@ -26,6 +45,7 @@ a {
   display: flex;
   flex-direction: column;
   transition: ease-out 0.2s;
+  width: 100%;
   padding: 10px;
   border-radius: 4px; }
   .card p {
@@ -41,5 +61,42 @@ a {
   gap: 20px; }
   .post-data p {
     font-size: 0.8rem; }
+
+#new-post-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 400px;
+  padding: 20px;
+  border: 1px solid #0000004f;
+  border-radius: 4px;
+  box-shadow: 2px 2px 6px #0000003b inset; }
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  height: 100%; }
+  .inputs input,
+  .inputs textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #0000004f;
+    border-radius: 4px; }
+  .inputs textarea {
+    resize: none;
+    height: 100%;
+    border: 1px solid #0000004f;
+    border-radius: 4px; }
+
+#name-input {
+  height: 100px; }
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; }
 
 /*# sourceMappingURL=style.css.map */
