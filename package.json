@@ -2,6 +2,7 @@
   "name": "local-library",
   "version": "0.0.0",
   "private": true,
+  "engines": { "node": "17.9.0" },
   "scripts": {
     "start": "node ./bin/www",
     "devstart": "nodemon ./bin/www",
