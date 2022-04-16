@@ -16,7 +16,8 @@ nav {
   margin-bottom: 20px; }
 
 a {
-  color: #00b7ff; }
+  color: #00b7ff;
+  text-decoration: none; }
 
 button {
   padding: 10px;
