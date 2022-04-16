@@ -1,6 +1,6 @@
 # My Posts
 
-This is an express application that enables users to view posts and create their own. This application is hosted and deployed using [Heroku]().
+This is an express application that enables users to view posts and create their own. This application is hosted and deployed using [Heroku](https://myposts-mo.herokuapp.com/).
 
 ## Technologies Used
 
