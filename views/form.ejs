@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <form id="new-post-form" method="post" action="/new">
+      <div id="username-input">
+        <label for="user">Name</label>
+        <input id="user" type="text" name="user" required />
+      </div>
+
+      <div id="post-text-input">
+        <label for="text">Your Post</label>
+        <textarea id="text" type="text" name="text" required> </textarea>
+      </div>
+
+      <button type="submit">Post</button>
+    </form>
+  </body>
+</html>
