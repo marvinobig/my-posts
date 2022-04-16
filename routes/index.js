@@ -5,12 +5,12 @@ const posts = [
   {
     text: "Hi there!",
     user: "Amando",
-    added: new Date().toUTCString(),
+    added: new Date().toLocaleString(),
   },
   {
     text: "Hello World!",
     user: "Charles",
-    added: new Date().toUTCString(),
+    added: new Date().toLocaleString(),
   },
 ];
 
@@ -23,7 +23,7 @@ router.post("/new", function (req, res, next) {
   posts.push({
     text: req.body.text,
     user: req.body.user,
-    added: new Date().toUTCString(),
+    added: new Date().toLocaleString(),
   });
   res.redirect("/");
 });
